@@ -1,0 +1,15 @@
+.header{
+   border: 2px solid black;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin: 1px
+}
+
+.logo img{
+   width: 150px;
+   float:left;
+}
+
+.title{
+    text-align: left;
+}
