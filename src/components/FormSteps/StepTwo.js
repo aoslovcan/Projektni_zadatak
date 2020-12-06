@@ -1,9 +1,12 @@
 import React from 'react'
 
-const StepTwo = () => {
+const StepTwo = (props) => {
     const services = ["Zamjena ulja i filter (500 kn)",
         "Promjena pakni(450 kn)", "Promjena guma (100 kn)", "Servis klima uređaja (299 kn)",
         "Balansiranje guma (50 kn)", "Zamjena ulja u kočnicama (229kn)"]
+        if (props.currentStepTwo !== 2) {
+            return null
+          } 
     return (
         <div className="container">
             <div className="row border-bottom">
@@ -13,7 +16,7 @@ const StepTwo = () => {
                 {
                     services.map((m, i) =>
                         <div className="col-sm-4" id="service" >
-                            <p> <input type="checkbox" id={i} value={m} /> {m} </p> </div >
+                            <p> <input type="checkbox" id={i} name="service" value={props.service} onChange={props.handleChange('service')}/> {m} </p> </div >
                     )
                 }
                 <div className="col-sm-12" id="count">

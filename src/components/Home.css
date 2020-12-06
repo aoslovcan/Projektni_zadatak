@@ -1,0 +1,19 @@
+.main{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    background-color: rgb(255,255,255);
+   
+    width: 60%;
+    height: 60%;
+    color: rgb(0,0,0);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+#title{
+    text-align: center;
+}
+#close{
+    text-align: right;
+    z-index: 1;
+}

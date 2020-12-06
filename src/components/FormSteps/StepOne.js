@@ -1,10 +1,13 @@
 import React from 'react';
 import './FormSteps.css'
-const StepOne = () => {
+const StepOne = (props) => {
     const carMark = ["Peugeot", "Volkswagen", "Citroen", "Audi", "BMW", "Seat", "Alfa Romeo",
         "Kia", "Hyundai", "Honda", "Toyota"
     ]
     console.log(carMark)
+    if (props.currentStepOne !== 1) {
+        return null
+      } 
     return (
         <div className="container " >
             <div className="row border-bottom">
@@ -14,7 +17,7 @@ const StepOne = () => {
                 {
                     carMark.map(m =>
                         <div className="col-sm-2" id="car-mark" >
-                            <p> <input type="radio" value={m} name="gender" /> {m} </p> </div >
+                            <p><input required type="radio" value={m} name="car_mark" onChange={props.handleChange('car_mark')} required/> {m} </p> </div >
                     )
                 }
             </div>
