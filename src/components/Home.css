@@ -3,9 +3,9 @@
     top: 20%;
     left: 20%;
     background-color: rgb(255,255,255);
-   
+    overflow: auto;
     width: 60%;
-    height: 60%;
+    height: fit-content;
     color: rgb(0,0,0);
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
@@ -16,4 +16,17 @@
 #close{
     text-align: right;
     z-index: 1;
+}
+
+.form{
+   height: 100%;
+    
+   
+}
+#btnB{
+    margin-left: 5px;
+}
+#buttons{
+    text-align: right;
+    padding: 2px;
 }

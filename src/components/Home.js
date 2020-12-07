@@ -9,6 +9,7 @@ import MasterForm from './MasterForm';
 function Home(props) {
 
   const [open, setOpen] = useState(false);
+  const [value, setValue] = useState([]);
 
   const openModal = () => {
     setOpen(true);
@@ -17,14 +18,23 @@ function Home(props) {
   const closeModal = () => {
     setOpen(false);
   };
+
+  const changeHandler = (e) =>{
+setValue({...value, [e.target.name] : e.target.value})
+  }
+  const handleSubmit = (e) =>{
+    e.preventDeafult();
+    const data = value
+    console.log(data)
+  }
   return (
     <div >
       <p> Pritisnite gumb niže kako biste pokrenuli </p>
-      <button onClick={openModal}> Pokreni kofigurator </button>
+      <button onClick={openModal}> Pokreni konfigurator </button>
 
       <Modal
         open={open}
-
+       
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description">
 
@@ -38,14 +48,13 @@ function Home(props) {
                 <h3>Konfigurator servisa</h3>
               </div>
              <div className="col-sm-12">
-           <MasterForm/>
+           <MasterForm onCloseModal={closeModal}/>
              </div>
             </div>
           </div>
         </div>
 
       </Modal>
-
     </div>
 
 

@@ -14,19 +14,20 @@ const StepThree = (props) => {
             </div>
             <div className="row" id="count">
                 <div className="col">
-                    <input className="form-control" type="text" name="full_name" value={props.full_name} onChange={props.handleChange('full_name')} placeholder="Ime i prezime" />
+                    <input className="form-control" type="text" name="full_name" value={props.full_name} onChange={props.handleChange('full_name')} placeholder="Ime i prezime" required/>
                 </div>
                 <div className="col">
-                    <input className="form-control" type="email" name="email" value={props.email} onChange={props.handleChange('email')} placeholder="Email adresa" />
+                    <input className="form-control" type="email" name="email" value={props.email} onChange={props.handleChange('email')} placeholder="Email adresa" required />
                 </div>
             </div>
             <div className="row" id="count">
                 <div className="col">
-                    <input className="form-control" type="text" name="phone_number" value={props.phone_number} onChange={props.handleChange('phone_number')} placeholder="Broj telefona" />
+                    <input className="form-control" type="text" name="phone_number" value={props.phone_number} onChange={props.handleChange('phone_number')} placeholder="Broj telefona" required />
                 </div>
                 <div className="col">
                     <textarea className="form-control" rows="3" name="remark" value={props.remark} onChange={props.handleChange('remark')} placeholder="Napomena"></textarea>
                 </div>
+              
             </div>
            
         </div>

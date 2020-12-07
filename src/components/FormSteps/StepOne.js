@@ -17,7 +17,7 @@ const StepOne = (props) => {
                 {
                     carMark.map(m =>
                         <div className="col-sm-2" id="car-mark" >
-                            <p><input required type="radio" value={m} name="car_mark" onChange={props.handleChange('car_mark')} required/> {m} </p> </div >
+                            <p><input  type="radio" value={m} name="car_mark" onChange={props.handleChange('car_mark')} required/> {m} </p> </div >
                     )
                 }
             </div>
