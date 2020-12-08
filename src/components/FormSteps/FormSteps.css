@@ -1,20 +1,51 @@
 /*StepOne*/
-#mark-title{
-    text-align: left;
-    margin-bottom: 10px;
+
+#mark-title {
+	text-align: left;
+	margin-bottom: 10px;
 }
+
 #car-mark {
-    text-align: left;
-   
+	text-align: left;
 }
+
 
 /*StepTwo*/
 
-#service{
-    text-align: left;
-    margin-bottom: 10px;
+#service {
+	text-align: left;
+	margin-bottom: 10px;
 }
 
-#count{
-    text-align: right;
+#count {
+	text-align: right;
+}
+#discount{
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*StepFour*/
+
+#right {
+	float: right;
+}
+
+.personal_data {
+	padding: 10px;
+}
+
+.personal_data li {
+	list-style-type: none;
+	text-align: left;
+}
+
+
+/*Success*/
+
+.success {
+	text-align: center;
+	padding: 10px;
 }
